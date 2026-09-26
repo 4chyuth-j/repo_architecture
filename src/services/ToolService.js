@@ -110,6 +110,11 @@ class ToolService {
         }
     }
 
+    /**
+     * Deletes the tools in bulk by IDs
+     * @param {*} ids- array
+     * @returns 
+     */
     async deleteBulkTools(ids) {
         const results = {
             deleted: [],
