@@ -24,6 +24,10 @@ class ToolRespository extends BaseRepository{
         return await Tool.findByCategory(category);
     }
 
+    /**
+     * finds the popular tool
+     * @returns 
+     */
     async findPopular() {
         return await Tool.findPopular();
     }
