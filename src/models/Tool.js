@@ -55,10 +55,7 @@ const toolSchema =  new mongoose.Schema({
 toolSchema.index({category:1, isPopular:-1});
 toolSchema.index({name:1});
 
-toolSchema.pre('save',function (next){
-    this.updatedAt = Date.now();
-    next();
-});
+
 
 toolSchema.statics.findPopular = function (){
     return this.find({isPopular: true}).sort({createdAt:-1});

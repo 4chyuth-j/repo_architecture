@@ -5,7 +5,7 @@ class ToolRespository extends BaseRepository{
     constructor(){
         super(Tool);
     }
-
+    
     async findByName(name){
         return await this.findOne({name})
     }
