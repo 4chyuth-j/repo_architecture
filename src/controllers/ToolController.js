@@ -47,6 +47,11 @@ class ToolController {
         }
     }
 
+    /**
+     * Creating a single Tool business logic
+     * @param {*} req 
+     * @param {*} res 
+     */
     createTool = async (req,res)=>{
         try {
             const toolData = req.body;
